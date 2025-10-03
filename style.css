@@ -1,0 +1,330 @@
+body {
+  font-family: "Fira Code", "Consolas", "Courier New", monospace;
+  height: 100vh;
+  margin: 0;
+  background: #282a36 !important;
+  padding-left: 120px; /* margem grande à esquerda */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.typing {
+  font-weight: 300; /* mais fino */
+  font-family: "Fira Code", "Consolas", "Courier New", monospace;
+  color: #8be9fd;
+}
+.typing-line {
+  border-right: 2px solid #8be9fd;
+  display: inline-block;
+  animation: blink 0.7s infinite;
+  margin-left: 5px;
+}
+.hero-title {
+  font-weight: bold;
+  color: #ff79c6;
+  margin: 0;
+  text-align: left;
+}
+
+.hero-title.name {
+  font-size: 3.5rem;
+  font-family: "Fira Code", "Consolas", "Courier New", monospace;
+  margin: 0;
+}
+
+.tag {
+  color: #50fa7b; /* verde para as tags */
+}
+
+.nome {
+  color: #ff79c6; /* rosa para o nome */
+}
+
+.hero-title.subtitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e2e8f0;
+  font-size: 24px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.linkedin:hover {
+  background: #0077b5;
+}
+
+.github:hover {
+  background: #000000;
+}
+
+.instagram:hover {
+  background: #a60ff1;
+}
+
+body > * {
+  margin-bottom: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0f1a; /* fundo escuro */
+}
+
+.navbar {
+  background: transparent;
+  padding: 10px 0; /* só em cima e embaixo */
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar li:first-child {
+  margin-left: 0; /* alinhamento perfeito do Home */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 18px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff79c6; /* verde no hover */
+}
+
+.navbar a.active {
+  color: #ff79c6; /* Home já ativa */
+}
+
+.navbar a.active::after,
+.navbar a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 100%;
+  background: #6272a4; /* linha dourada */
+}
+
+.aba {
+  display: none; /* esconde tudo no início */
+  margin-top: 20px;
+  padding: 10px 0;
+  border-radius: 10px;
+  color: #f8f8f2;
+  font-size: 18px;
+}
+
+#conteudo {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estilo geral das abas */
+.aba {
+  background: #44475a;
+  color: #f8f8f2;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  display: none; /* só aparece quando clicada */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.aba h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #ff79c6;
+  border-bottom: 2px solid #6272a4;
+  padding-bottom: .5rem;
+}
+
+/* SOBRE */
+.sobre-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.sobre-container .foto img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff79c6;
+}
+
+/* EDUCAÇÃO */
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.edu-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.edu-item h3 {
+  margin: 0;
+}
+
+/* EXPERIÊNCIA */
+.exp-item {
+  margin-top: 1rem;
+  background: #282a36;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* PROJETOS */
+.proj-card {
+  margin-top: 1rem;
+  background: #282a36;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.proj-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* HABILIDADES */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: .8rem;
+  margin-top: 1rem;
+}
+.skills-grid span {
+  background: #6272a4;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===================================== */
+/* ESTILOS ESPECÍFICOS: HABILIDADES */
+/* ===================================== */
+
+/* Container que faz os dois blocos ficarem lado a lado (Flexbox) */
+.skills-container {
+    display: flex; /* Ativa o layout flexível */
+    gap: 20px; /* Espaço entre os dois blocos */
+    flex-wrap: wrap; /* Permite que os blocos se empilhem em telas pequenas */
+    margin-top: 15px;
+}
+
+/* Estilo para cada bloco individual (o "quadrado") */
+.skills-bloco {
+    flex: 1 1 45%; /* Ocupa cerca de 45% da largura, deixando espaço para o gap */
+    padding: 15px;
+    /* Usa o mesmo background do seu 'exp-item' e 'proj-card' */
+    background: #282a36; 
+    border-radius: 10px;
+    border: 1px solid #44475a; /* Borda sutil */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.skills-bloco:hover {
+    transform: translateY(-3px); /* Efeito suave ao passar o mouse */
+}
+
+/* Estilo para o título de cada grupo de habilidade */
+.skills-bloco h3 {
+    text-align: center;
+    color: #ff79c6; /* Verde claro */
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #6272a4; /* Linha sutil */
+}
+
+/* Estilo para a grade de habilidades dentro de cada bloco */
+/* Usamos Flexbox aqui para melhor controle do espaçamento das tags */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaço entre as tags */
+    justify-content: center; /* Centraliza as tags dentro do bloco */
+}
+
+/* Estilo para as tags de habilidade (spans) */
+.skills-grid span {
+    /* Mantém o estilo de tag do seu bloco HABILIDADES original */
+    background: #6272a4; /* Cor suave do seu padrão */
+    color: #f8f8f2; /* Texto claro */
+    padding: .5rem 1rem;
+    border-radius: 20px; /* Estilo 'pill' */
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+    white-space: nowrap; /* Impede que o texto quebre */
+    transition: background 0.2s;
+}
+
+.skills-grid span:hover {
+    background: #ff79c6; /* Cor de destaque (rosa) no hover */
+    color: #282a36; /* Texto escuro */
+}
+
+/* RESPONSIVIDADE: Empilha os blocos em telas menores (celulares) */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column; /* Coloca os blocos um em cima do outro */
+        gap: 15px;
+    }
+    .skills-bloco {
+        flex: 1 1 100%; /* Ocupa 100% da largura em telas pequenas */
+    }
+}

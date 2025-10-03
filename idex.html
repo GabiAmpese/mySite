@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela Ampese</title>
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1 class="hero-title name">
+        <span class="tag">&lt;h1&gt;</span>
+        <span class="nome">Gabriela Ampese</span>
+        <span class="tag">&lt;/h1&gt;</span>
+    </h1>
+
+    <h2 class="hero-title subtitle">
+        Eu sou <span class="typing"></span>
+        <div class="typing-line"></div>
+    </h2>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="main.js"></script>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/gabriela-ampese/" target="_blank" class="icon linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/GabiAmpese" target="_blank" class="icon github">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/gabriela_ampese/" target="_blank" class="icon instagram">
+            <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="#" onclick="abrirAba('sobre')">Sobre mim</a></li>
+    <li><a href="#" onclick="abrirAba('educacao')">Educação</a></li>
+    <li><a href="#" onclick="abrirAba('experiencia')">Experiência</a></li>
+    <li><a href="#" onclick="abrirAba('projetos')">Projetos</a></li>
+    <li><a href="#" onclick="abrirAba('habilidades')">Habilidades</a></li>
+  </ul>
+</nav>
+
+<section id="conteudo">
+
+  <!-- SOBRE MIM -->
+  <div id="sobre" class="aba">
+    <div class="sobre-container">
+      <div class="foto">
+        <img src="minhafoto.jpeg" alt="Foto Gabriela Ampese">
+      </div>
+      <div class="texto">
+        <h2>✨ Sobre mim</h2>
+        <p>
+          Atualmente curso <b>Ciência da Computação</b> e estou em constante busca por 
+          aprendizado e desenvolvimento profissional. Sou entusiasmada em resolver problemas 
+          e encarar novos desafios, tanto na minha área de atuação atual quanto em 
+          oportunidades futuras que contribuam para meu crescimento na tecnologia.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCAÇÃO -->
+  <div id="educacao" class="aba">
+    <h2>📚 Educação</h2>
+    <div class="edu-item">
+      <img src="logoAtitus.png" alt="Logo Atitus">
+      <div>
+        <h3>Atitus Educação</h3>
+        <span>fev 2025 – dez 2028</span>
+      </div>
+    </div>
+    <div class="edu-item">
+      <img src="logoWizard.png" alt="Logo Wizard">
+      <div>
+        <h3>Wizard by Pearson</h3>
+        <span>fev 2016 – dez 2024</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIÊNCIA -->
+  <div id="experiencia" class="aba">
+    <h2>💼 Experiência</h2>
+    <div class="exp-item">
+      <h3>Assistente Administrativa</h3>
+      <p><b>Oficina Mecânica Ampese</b> jan 2024 – o momento</p>
+      <p><b>Competências:</b> Software corporativo · Faturamento · Resolução de problemas · Gestão de orçamentos</p>
+    </div>
+  </div>
+
+  <!-- PROJETOS -->
+  <div id="projetos" class="aba">
+    <h2>🚀 Projetos</h2>
+    <div class="proj-card">
+      <img src="thumb-projeto.png" alt="Projeto GameLightningMcQueen">
+      <h3>GameLightningMcQueen</h3>
+      <p>Jogo desenvolvido como projeto pessoal de aprendizado e prática em programação.</p>
+    </div>
+  </div>
+
+<div id="habilidades" class="aba">
+  <h2>🛠️ Habilidades</h2>
+  <div class="skills-container">
+
+    <div class="skills-bloco">
+      <h3>Desenvolvimento Web & Design</h3>
+      <div class="skills-grid">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+        <span>Git & GitHub</span>
+        <span>VS Code</span>
+        <span>Canva</span>
+      </div>
+    </div>
+
+    <div class="skills-bloco">
+      <h3>Back-end, Dados & Sistemas</h3>
+      <div class="skills-grid">
+        <span>Python</span>
+        <span>Linux</span>
+        <span>Virtual Machine</span>
+        <span>WireShark</span>
+        <span>Jasp</span>
+        <span>Aprendizado de máquina</span>
+        <span>Análise de dados</span>
+        <span>Programação lógica</span>
+        <span>Redes de computadores</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
