@@ -328,3 +328,45 @@ body {
         flex: 1 1 100%; /* Ocupa 100% da largura em telas pequenas */
     }
 }
+/* No seu arquivo de estilo CSS (ou dentro de um bloco <style> no seu HTML) */
+
+/* 1. Torna o cartão (container principal) um container Flexbox */
+.proj-card {
+  display: flex; /* Habilita o Flexbox */
+  align-items: flex-start; /* Alinha os itens pelo topo (opcional, mas bom para o layout) */
+  gap: 20px; /* Adiciona um espaço entre a imagem e o texto (ajuste se necessário) */
+}
+
+/* 2. Redimensiona a Imagem e Garante que ela fique à esquerda */
+.proj-card img {
+  width: 150px; /* Largura pequena para a imagem (ajuste este valor) */
+  height: auto; /* Mantém a proporção */
+  /* Remove qualquer margin-top/bottom ou display: block que possa ter centrado ela */
+}
+
+.proj-card .texto-projeto {
+  flex-grow: 1; 
+  /* Adicione/modifique esta linha: */
+  text-align: left; /* Garante que todo o texto dentro desta div se alinhe à esquerda */
+}
+
+/* Se você também quer que o título esteja à esquerda (o que é o padrão): */
+.proj-card .texto-projeto h3 {
+    text-align: left;
+}
+
+.btn-github {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 15px;
+  background-color: #24292e; /* Cor do GitHub */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-github:hover {
+  background-color: #0366d6; /* Azul do GitHub */
+}
