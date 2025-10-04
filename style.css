@@ -3,14 +3,14 @@ body {
   height: 100vh;
   margin: 0;
   background: #282a36 !important;
-  padding-left: 120px; /* margem grande à esquerda */
+  padding-left: 120px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .typing {
-  font-weight: 300; /* mais fino */
+  font-weight: 300;
   font-family: "Fira Code", "Consolas", "Courier New", monospace;
   color: #8be9fd;
 }
@@ -34,11 +34,11 @@ body {
 }
 
 .tag {
-  color: #50fa7b; /* verde para as tags */
+  color: #50fa7b; 
 }
 
 .nome {
-  color: #ff79c6; /* rosa para o nome */
+  color: #ff79c6; 
 }
 
 .hero-title.subtitle {
@@ -89,12 +89,12 @@ body > * {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0a0f1a; /* fundo escuro */
+  background-color: #0a0f1a; 
 }
 
 .navbar {
   background: transparent;
-  padding: 10px 0; /* só em cima e embaixo */
+  padding: 10px 0; 
 }
 
 .navbar ul {
@@ -109,7 +109,7 @@ body {
 }
 
 .navbar li:first-child {
-  margin-left: 0; /* alinhamento perfeito do Home */
+  margin-left: 0; 
 }
 
 .navbar a {
@@ -121,11 +121,11 @@ body {
 }
 
 .navbar a:hover {
-  color: #ff79c6; /* verde no hover */
+  color: #ff79c6; 
 }
 
 .navbar a.active {
-  color: #ff79c6; /* Home já ativa */
+  color: #ff79c6; 
 }
 
 .navbar a.active::after,
@@ -136,11 +136,11 @@ body {
   bottom: -5px;
   height: 3px;
   width: 100%;
-  background: #6272a4; /* linha dourada */
+  background: #6272a4; 
 }
 
 .aba {
-  display: none; /* esconde tudo no início */
+  display: none; 
   margin-top: 20px;
   padding: 10px 0;
   border-radius: 10px;
@@ -158,14 +158,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Estilo geral das abas */
 .aba {
   background: #44475a;
   color: #f8f8f2;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-  display: none; /* só aparece quando clicada */
+  display: none; 
   animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -177,7 +176,6 @@ body {
   padding-bottom: .5rem;
 }
 
-/* SOBRE */
 .sobre-container {
   display: flex;
   gap: 2rem;
@@ -191,7 +189,6 @@ body {
   border: 3px solid #ff79c6;
 }
 
-/* EDUCAÇÃO */
 .edu-item {
   display: flex;
   align-items: center;
@@ -207,7 +204,6 @@ body {
   margin: 0;
 }
 
-/* EXPERIÊNCIA */
 .exp-item {
   margin-top: 1rem;
   background: #282a36;
@@ -215,7 +211,6 @@ body {
   border-radius: 10px;
 }
 
-/* PROJETOS */
 .proj-card {
   margin-top: 1rem;
   background: #282a36;
@@ -229,7 +224,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* HABILIDADES */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -245,112 +239,92 @@ body {
   font-weight: 500;
 }
 
-/* Animação */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===================================== */
-/* ESTILOS ESPECÍFICOS: HABILIDADES */
-/* ===================================== */
-
-/* Container que faz os dois blocos ficarem lado a lado (Flexbox) */
 .skills-container {
-    display: flex; /* Ativa o layout flexível */
-    gap: 20px; /* Espaço entre os dois blocos */
-    flex-wrap: wrap; /* Permite que os blocos se empilhem em telas pequenas */
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
     margin-top: 15px;
 }
 
-/* Estilo para cada bloco individual (o "quadrado") */
 .skills-bloco {
-    flex: 1 1 45%; /* Ocupa cerca de 45% da largura, deixando espaço para o gap */
+    flex: 1 1 45%; 
     padding: 15px;
-    /* Usa o mesmo background do seu 'exp-item' e 'proj-card' */
     background: #282a36; 
     border-radius: 10px;
-    border: 1px solid #44475a; /* Borda sutil */
+    border: 1px solid #44475a; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
 }
 
 .skills-bloco:hover {
-    transform: translateY(-3px); /* Efeito suave ao passar o mouse */
+    transform: translateY(-3px); 
 }
 
-/* Estilo para o título de cada grupo de habilidade */
 .skills-bloco h3 {
     text-align: center;
-    color: #ff79c6; /* Verde claro */
+    color: #ff79c6;
     font-size: 1.2rem;
     margin-top: 0;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 1px dashed #6272a4; /* Linha sutil */
+    border-bottom: 1px dashed #6272a4; 
 }
 
-/* Estilo para a grade de habilidades dentro de cada bloco */
-/* Usamos Flexbox aqui para melhor controle do espaçamento das tags */
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Espaço entre as tags */
-    justify-content: center; /* Centraliza as tags dentro do bloco */
+    gap: 10px; 
+    justify-content: center; 
 }
 
-/* Estilo para as tags de habilidade (spans) */
 .skills-grid span {
-    /* Mantém o estilo de tag do seu bloco HABILIDADES original */
-    background: #6272a4; /* Cor suave do seu padrão */
-    color: #f8f8f2; /* Texto claro */
+    background: #6272a4; 
+    color: #f8f8f2; 
     padding: .5rem 1rem;
-    border-radius: 20px; /* Estilo 'pill' */
+    border-radius: 20px; 
     text-align: center;
     font-size: .9rem;
     font-weight: 500;
-    white-space: nowrap; /* Impede que o texto quebre */
+    white-space: nowrap; 
     transition: background 0.2s;
 }
 
 .skills-grid span:hover {
-    background: #ff79c6; /* Cor de destaque (rosa) no hover */
-    color: #282a36; /* Texto escuro */
+    background: #ff79c6; 
+    color: #282a36; 
 }
 
-/* RESPONSIVIDADE: Empilha os blocos em telas menores (celulares) */
 @media (max-width: 768px) {
     .skills-container {
-        flex-direction: column; /* Coloca os blocos um em cima do outro */
+        flex-direction: column; 
         gap: 15px;
     }
     .skills-bloco {
-        flex: 1 1 100%; /* Ocupa 100% da largura em telas pequenas */
+        flex: 1 1 100%; 
     }
 }
-/* No seu arquivo de estilo CSS (ou dentro de um bloco <style> no seu HTML) */
 
-/* 1. Torna o cartão (container principal) um container Flexbox */
 .proj-card {
-  display: flex; /* Habilita o Flexbox */
-  align-items: flex-start; /* Alinha os itens pelo topo (opcional, mas bom para o layout) */
-  gap: 20px; /* Adiciona um espaço entre a imagem e o texto (ajuste se necessário) */
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px; 
 }
 
-/* 2. Redimensiona a Imagem e Garante que ela fique à esquerda */
 .proj-card img {
-  width: 150px; /* Largura pequena para a imagem (ajuste este valor) */
-  height: auto; /* Mantém a proporção */
-  /* Remove qualquer margin-top/bottom ou display: block que possa ter centrado ela */
+  width: 150px; 
+  height: auto; 
 }
 
 .proj-card .texto-projeto {
   flex-grow: 1; 
-  /* Adicione/modifique esta linha: */
-  text-align: left; /* Garante que todo o texto dentro desta div se alinhe à esquerda */
+  text-align: left;
 }
 
-/* Se você também quer que o título esteja à esquerda (o que é o padrão): */
 .proj-card .texto-projeto h3 {
     text-align: left;
 }
@@ -359,7 +333,7 @@ body {
   display: inline-block;
   margin: 10px 0;
   padding: 10px 15px;
-  background-color: #24292e; /* Cor do GitHub */
+  background-color: #24292e;
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
@@ -368,5 +342,5 @@ body {
 }
 
 .btn-github:hover {
-  background-color: #0366d6; /* Azul do GitHub */
+  background-color: #0366d6; 
 }
